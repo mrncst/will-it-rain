@@ -1,0 +1,35 @@
+.headline {
+    font-family: $font-family-title;
+    font-size: $font-size-title;
+    letter-spacing: 1.5px;
+    width: 200px;
+    margin-left: 40px;
+    color: $font-color-light;
+
+    @include media-query {
+        margin-top: 20px;
+    
+    }
+
+    &-light {
+        color: $font-color-light;
+    }
+
+    &-dark {
+        color: $font-color-dark;
+    }
+}
+
+.main-section {
+    display: flex;
+    margin: 40px 0;
+
+    @include media-query {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+}
+
+#result {
+    margin-bottom: 30px;
+}

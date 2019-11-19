@@ -1,0 +1,32 @@
+.dark-mode-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon {
+    width: 50px;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 40px;
+    margin-top: 10px;
+    transition: background 0.2s ease-in;
+
+    &-sun {
+        background: #FFC107;
+        border-radius: 50%;
+        &:hover {
+            background: darken(#FFC107, 5%);
+        }
+    }
+
+    &-night {
+        background: #424250;
+        border-radius: 50%;
+        &:hover {
+            background: darken(#424250, 5%);
+        }
+    }
+
+}
+

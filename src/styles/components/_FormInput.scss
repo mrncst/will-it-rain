@@ -1,0 +1,9 @@
+.prediction {
+    text-align: center;
+}
+
+.prediction-form {
+    & p {
+        font-family: $font-family-default;
+    }
+}

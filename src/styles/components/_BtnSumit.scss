@@ -1,0 +1,36 @@
+.btn-submit {
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    font-family: $font-family-default;
+    font-size: $font-size-button;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin-bottom: 30px;
+
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    &-light {
+        background: $btn-color-light;
+        color: #fff;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background: darken($btn-color-light, 5%);
+        }
+    }
+
+    &-dark {
+        background: $btn-color-dark;
+        color: #fff;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            background: darken($btn-color-dark, 5%);
+        }
+    }
+}
