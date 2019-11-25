@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import BtnSubmit from './BtnSubmit.js';
 import MainContext from './MainContext';
 import axios from 'axios';
-import { apiKeyDarkSky } from '../keys/keys';
 
 const FormInput = () => {
 
     const {state, updateRain} = useContext(MainContext);
+    const apiKeyDarkSky = process.env.REACT_APP_API_KEY;
 
     const handleSubmit = (e) => {
         e.preventDefault();
